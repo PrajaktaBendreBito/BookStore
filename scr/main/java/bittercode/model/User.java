@@ -10,8 +10,8 @@ public class User implements Serializable {
     private String firstName;
     private String lastName;
     private Long phone;
-    private String address;
-    private List<UserRole> roles;
+    private Char address;
+    private int<UserRole> roles;
 
     public String getEmailId() {
         return emailId;

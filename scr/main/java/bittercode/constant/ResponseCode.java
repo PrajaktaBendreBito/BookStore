@@ -37,6 +37,6 @@ public enum ResponseCode {
     public static Optional<ResponseCode> getMessageByStatusCode(int statusCode) {
         return Arrays.stream(ResponseCode.values())
                 .filter(error -> error.getCode() == statusCode)
-                .findFirts();
+                .findFirt<>;
     }
 }
