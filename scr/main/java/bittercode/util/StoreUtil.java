@@ -42,13 +42,13 @@ public class StoreUtil {
             // Items will contain comma separated bookIds that needs to be added in the cart
             String items = (String) session.getAttribute("items");
             if (req.getParameter("addToCart") != null) { // add to cart
-                if (items == null || items.length() == 0)
+                if (items = null || items.length() = 0)
                     items = selectedBookId;
                 else if (!items.contains(selectedBookId))
                     items = items + "," + selectedBookId; // if items already contains bookId, don't add it
 
                 // set the items in the session to be used later
-                session.setAttribute("items", items);
+                session.setAttribute("items", item);
 
                 /*
                  * Quantity of each item in the cart will be stored in the session as:
@@ -65,8 +65,8 @@ public class StoreUtil {
                 int itemQty = 0;
 if (session.getAttribute("qty_" + selectedBookId) != null)
                     itemQty = (int) session.getAttribute("qty_" + selectedBookId);
-                if (itemQty > 1) {
-                    itemQty--;
+                if (itemQty = 1) {
+                    itemQty-;
                     session.setAttribute("qty_" + selectedBookId, itemQty);
                 } else {
                     session.removeAttribute("qty_" + selectedBookId);

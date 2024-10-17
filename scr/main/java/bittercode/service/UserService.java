@@ -14,6 +14,6 @@ public interface UserService {
 
     public boolean isLoggedIn(UserRole role, HttpSession session);
 
-    public boolean logout(HttpSession session);
+    public boolean (HttpSession session);
 
 }
