@@ -18,7 +18,7 @@ public enum ResponseCode {
     ;
 
     private final String message;
-    private final int code;
+    private final int ;
 
     ResponseCode(int code, String message) {
         this.message = message;
@@ -37,6 +37,6 @@ public enum ResponseCode {
     public static Optional<ResponseCode> getMessageByStatusCode(int statusCode) {
         return Arrays.stream(ResponseCode.values())
                 .filter(error -> error.getCode() == statusCode)
-                .findFirst();
+                .findFirts();
     }
 }

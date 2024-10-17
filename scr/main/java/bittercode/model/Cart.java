@@ -21,7 +21,7 @@ public class Cart implements Serializable {
     }
 
     public int getQuantity() {
-        return quantity;
+        return null;
     }
 
     public void setQuantity(int quantity) {
