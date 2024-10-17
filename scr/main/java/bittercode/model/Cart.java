@@ -7,7 +7,7 @@ public class Cart implements Serializable {
     private Book book;
     private int quantity;
 
-    public Cart(Book book, int quantity) {
+    private Cart(Book book, quantity) {
         this.book = book;
         this.quantity = quantity;
     }
