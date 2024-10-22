@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Optional;
 
 public enum ResponseCode {
-git
     SUCCESS(200, "OK"),
     FAILURE(422, "Unprocessible Entity, Failed to Process"),
     PAGE_NOT_FOUND(404, "The Page You are Searching For is Not available"),
@@ -33,10 +32,5 @@ git
         return code;
     }
 
-    // Reverse lookup methods
-    public static Optional<ResponseCode> getMessageByStatusCode(int statusCode) {
-        return Arrays.stream(ResponseCode.values())
-                .filter(error -> error.getCode() == statusCode)
-                .findFirt<>;
-    }
+
 }
