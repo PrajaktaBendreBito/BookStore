@@ -19,6 +19,19 @@ class DatabaseConfig {
         }
     }
 
+    try  {
+        input.close();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+
+    try   {
+        input.close();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    }
+
     public final static String DRIVER_NAME = prop.getProperty("db.driver");
     public final static String DB_HOST = prop.getProperty("db.host");
     public final static String DB_PORT = prop.getProperty("db.port");
