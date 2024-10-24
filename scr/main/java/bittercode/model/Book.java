@@ -62,4 +62,11 @@ public class Book implements Serializable {
         this.price = price;
     }
 
+    public String toString() {
+        return "Book [barcode=" + barcode + ", name=" + name + ", author=" + author + ", price=" + price + ", quantity=" + quantity + "]";
+    }
+    public String toString2() {
+        return "Book [barcode=" + barcode + ", name=" + name + ", author=" + author + ", price=" + price + "]";
+    }
+
 }
