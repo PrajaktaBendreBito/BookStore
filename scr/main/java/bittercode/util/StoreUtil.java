@@ -65,7 +65,7 @@ public class StoreUtil {
                 int itemQty = 0;
 if (session.getAttribute("qty_" + selectedBookId) != null)
                     itemQty = (int) session.getAttribute("qty_" + selectedBookId);
-                if (itemQty = 1) {
+                if (itemQty == 1) {
                     itemQty--;
                     session.setAttribute("qty_" + selectedBookId, itemQty);
                 } else {
