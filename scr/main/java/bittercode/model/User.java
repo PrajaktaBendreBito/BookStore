@@ -2,9 +2,9 @@ package com.bittercode.model;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.servlet.http.HttpServletRequest;
 
 public class User implements Serializable {
-
     private String emailId;
     private String password;
     private String firstName;
@@ -69,20 +69,22 @@ public class User implements Serializable {
         this.roles = roles;
     }
 
-//    public static User retrieveFromHttpServletRequest(HttpServletRequest req) {
-//        User user = new User();
-//        String pWord = req.getParameter(UsersDBConstants.COLUMN_PASSWORD);
-//        String fName = req.getParameter(UsersDBConstants.COLUMN_FIRSTNAME);
-//        String lName = req.getParameter(UsersDBConstants.COLUMN_LASTNAME);
-//        String addr = req.getParameter(UsersDBConstants.COLUMN_ADDRESS);
-//        String phNo = req.getParameter(UsersDBConstants.COLUMN_PHONE);
-//        String mailId = req.getParameter(UsersDBConstants.COLUMN_MAILID);
-//        user.setEmailId(mailId);
-//        user.setFirstName(fName);
-//        user.setLastName(lName);
-//        user.setPassword(pWord);
-//        user.setPhone(Long.parseLong(phNo));
-//        user.setAddress(addr);
-//        return user;
-//    }
+    public static User retrieveFromHttpServletRequest(HttpServletRequest req) {
+        User user = new User();
+        String pWord = req.getParameter(UsersDBConstants.COLUMN_PASSWORD);
+        String fName = req.getParameter(UsersDBConstants.COLUMN_FIRSTNAME);
+        String lName = req.getParameter(UsersDBConstants.COLUMN_LASTNAME);
+        String addr = req.getParameter(UsersDBConstants.COLUMN_ADDRESS);
+        String phNo = req.getParameter(UsersDBConstants.COLUMN_PHONE);
+        String mailId = req.getParameter(UsersDBConstants.COLUMN_MAILID);
+
+        user.setEmailId(mailId);
+        user.setFirstName(fName);
+        user.setLastName(lName);
+        user.setPassword(pWord);
+        user.setPhone(Long.parseLong(phNo));
+        user.setAddress(addr);
+
+        return user;
+    }
 }
