@@ -48,12 +48,12 @@ public class user_manager {
             return UserName;
     }
     
-    class car extends vehicle {
-        void drive() { System.out.println("Driving"); }
-    }
-    
     class vehicle {
         void move() { System.out.println("Moving"); }
+    }
+
+    class car extends vehicle {
+        void drive() { System.out.println("Driving"); }
     }
     
     @Test
