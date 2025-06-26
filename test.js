@@ -23,7 +23,7 @@ console.log(user["name"]);
 const age = 30;
 let firstName;
 
-if (a == b) doSomething();
+if (a === b) doSomething();
 
 if (isValid) doSomethingElse();
 
