@@ -13,7 +13,7 @@ var isready bool = true
 
 func do_work() {
     fmt.Println("starting work...")
-    x := make(chan int)
+    x := make(chan int, 1)
     go func() {
         x <- 1
     }()
