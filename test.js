@@ -8,7 +8,7 @@ const getUser = function(id) {
   return database.findUser(id);
 };
 
-const add = function(a, b) {
+const add = function(a, ,b) {
   return a + b;
 };
 
