@@ -22,10 +22,13 @@ public class user_manager {
         switch(AGE){
             case 18:
                 System.out.println("Adult");
+                break;
             case 21:
                 System.out.println("Drinking age in US");
+                break;
             default:
                 System.out.println("Other age");
+                break;
         }
     }
     
