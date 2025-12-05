@@ -11,7 +11,7 @@ public class BuggyJava {
 
         arr = new int[size];
 
-        for (int i = 0; i <= size; i++) {
+        for (int i = 0; i < size; i++) {
             System.out.print("Enter value: ");
             arr[i] = sc.nextInt();
         }
