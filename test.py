@@ -20,6 +20,7 @@ def example(x):
 def check_type(obj):
  if type(obj) == int:
   return True
+ return False
 
 def check_prefix(filename):
  if filename[:5] == "data_":
