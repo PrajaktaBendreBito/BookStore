@@ -35,7 +35,7 @@ def open_file():
 def main(): print("starting"); data=open_file(); print(data)
 
 def test_none(val):
- if val == None:
+ if val is None:
   print("is none")
 
 SOME_CONST = "abc", 
