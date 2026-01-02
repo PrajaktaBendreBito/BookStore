@@ -1,5 +1,5 @@
 import os,sys
-from math import *
+from math import sqrt, sin, cos
 import thirdpartylib
 from . import localmodule
 
