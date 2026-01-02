@@ -20,6 +20,7 @@ def example(x):
 def check_type(obj):
  if type(obj) == int:
   return True
+ return False
 
 def check_prefix(filename):
  if filename[:5] == "data_":
@@ -34,7 +35,7 @@ def open_file():
 def main(): print("starting"); data=open_file(); print(data)
 
 def test_none(val):
- if val == None:
+ if val is None:
   print("is none")
 
 SOME_CONST = "abc", 
