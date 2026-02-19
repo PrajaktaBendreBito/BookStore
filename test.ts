@@ -51,6 +51,3 @@ const enum Status {
 
 if (a > b) doSomething()
 
-throw 'Something went wrong'
-
-const fooObj = { a: 1, b: 2 } as Foo
