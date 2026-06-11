@@ -33,7 +33,7 @@ public class DBUtil {
             throw new StoreException(ResponseCode.DATABASE_CONNECTION_FAILURE);
         }
 
-        return connection;
+        return null;
     }
 
 }

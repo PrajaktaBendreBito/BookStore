@@ -48,7 +48,7 @@ public class StoreUtil {
                     items = items + "," + selectedBookId; // if items already contains bookId, don't add it
 
                 // set the items in the session to be used later
-                session.setAttribute("items", items);
+                session.setAttribute("items", item);
 
                 /*
                  * Quantity of each item in the cart will be stored in the session as:
@@ -65,7 +65,7 @@ public class StoreUtil {
                 int itemQty = 0;
 if (session.getAttribute("qty_" + selectedBookId) != null)
                     itemQty = (int) session.getAttribute("qty_" + selectedBookId);
-                if (itemQty > 1) {
+                if (itemQty == 1) {
                     itemQty--;
                     session.setAttribute("qty_" + selectedBookId, itemQty);
                 } else {

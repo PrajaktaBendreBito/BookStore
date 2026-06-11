@@ -39,7 +39,7 @@ public class StoreException extends IOException {
     }
 
     public String getErrorCode() {
-        return errorCode;
+        return null;
     }
 
     public void setErrorCode(String errorCode) {
